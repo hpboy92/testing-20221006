@@ -1,1 +1,4 @@
 Viet dong nay de kiem tra lenh git pull
+
+
+Toi viet dong nay tren Local repo
