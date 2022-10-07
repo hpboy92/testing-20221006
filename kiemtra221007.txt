@@ -1,4 +1,8 @@
 Viet dong nay de kiem tra lenh git pull
+<<<<<<< HEAD
 
 
 Toi viet dong nay tren Local repo
+=======
+Toi viet dong nay tren Remot repo
+>>>>>>> 9ed2902db1e3da06a6a3c649052021a46653056d
