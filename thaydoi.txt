@@ -5,3 +5,5 @@ Day la mot dong toi vua them vao
 Bay gio la 11h dem ngay 06 thang 10 nam 2022
 
 Bay gio la 15h20 ngay 08-10-2022, toi viet dong nay o Local Repo
+
+Toi hoc Front end vao toi 2-4-6 hang tuan
