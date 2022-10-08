@@ -6,5 +6,9 @@ Today is Oct 8th 2022 and I write this line.
 
 I am learning Front End Course hosted by CodeGym
 
+<<<<<<< HEAD
 
 Toi la nguoi Viet Nam
+=======
+Viet dong nay de tao confict
+>>>>>>> 73f02fd2dfa47c1abc68b5eadb0722e98a72a425
