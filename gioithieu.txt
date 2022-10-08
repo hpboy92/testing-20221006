@@ -5,3 +5,5 @@ I am 30 years old
 Today is Oct 8th 2022 and I write this line.
 
 I am learning Front End Course hosted by CodeGym
+
+Viet dong nay de tao confict
