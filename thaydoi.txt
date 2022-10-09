@@ -8,4 +8,8 @@ Bay gio la 15h20 ngay 08-10-2022, toi viet dong nay o Local Repo
 
 Toi hoc Front end vao toi 2-4-6 hang tuan
 
+<<<<<<< HEAD
 Toi duong nghi hoc T7 và CN
+=======
+Viet dong nay tren Remote Repo de tao conflict
+>>>>>>> dc7ab9e1a9a31bfc8d877f36dcfc5196679e7555
