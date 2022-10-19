@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JS Change Content</title>
+</head>
+<body>
+    <h2>Javascript có thể thay đổi nội dung thẻ HTML</h2>
+    <p id="demo">Tên tôi là Hoàng Anh</p>
+
+    <script>
+        // javascript có thể thay đổi nội dung thẻ HTML
+        // getElementByID() để tìm đến thẻ HTML theo ID
+        // innerHTML để thay đổi nội dung bên trong thẻ
+        function doiTen(){
+            document.getElementById('demo').innerHTML = 'Đổi tên tôi thành Andy';
+        }
+    </script>
+
+    <button type="button" onclick="doiTen()">Ấn vào đây để đổi tên</button>
+   
+</body>
+</html>

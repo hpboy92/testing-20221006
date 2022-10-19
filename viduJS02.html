@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo JavaScript change attribute</title>
+</head>
+<body>
+    <h2>JavaScript có thể thay đổi thuộc tính thẻ HTML</h2>
+    <p>Trường hợp này, JS thay đổi thuộc tính src (source) của thẻ hình ảnh</p>
+      
+        <script>
+        function batDen(){
+            document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif';
+        }
+        function tatDen(){
+            document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif';
+        }
+    </script>
+
+    <button type="button" onclick="batDen()">Bật đèn</button>
+
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" id="myImage">
+
+    <button type="button" onclick="tatDen()">Tắt đèn</button>
+
+    
+</body>
+</html>
