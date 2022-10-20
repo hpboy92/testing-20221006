@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo An Phan Tu JS</title>
+</head>
+<body>
+    <h1>JavaScript có thể ẩn phần tử HTML</h1>
+    <h2 id="demo">Ấn nút bên dưới để ẩn dòng chữ này</h2>
+
+    <script>
+        function anPhanTu() {
+            document.getElementById('demo').style.display='none';
+        }
+
+        function hienPhanTu() {
+            document.getElementById('demo').style.display = ''
+
+        }
+    </script>
+
+    <button type="button" onclick="anPhanTu()">Ẩn dòng chữ</button>
+
+    <button type="button" onclick="hienPhanTu()"> Hiện dòng chữ</button>
+</body>
+</html>
