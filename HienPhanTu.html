@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Hien Phan Tu</title>
+</head>
+<body>
+    <h1>Javascript có thể làm hiện phần tử</h1>
+
+    <img src="https://www.apple.com/v/iphone-14-pro/a/images/meta/iphone-14-pro_overview__e2a7u9jy63ma_og.png?202210122359" id="ip" width="600" style="display: none;">
+    <br>
+
+    <script>
+        function hienAnh() {
+            document.getElementById('ip').style.display ='block';
+        }
+
+        function anAnh() {
+            document.getElementById('ip').style.display ='none';
+        }
+    </script>
+
+    <button type="button" onclick="hienAnh()">Hiện Iphone 14</button>
+    <button type="button" onclick="anAnh()">Ẩn Iphone 14</button>
+
+
+    
+</body>
+</html>
