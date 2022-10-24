@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Su Kien</title>
+</head>
+<body>
+    <select id="car" onchange="chonXe ()">
+        <option value="Audi">Audi</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="BMW">BMW</option>
+        <option value="Honda">Honda</option>
+    </select>
+
+    <script>
+        function chonXe () {
+            let myCar = document.getElementById('car').value;
+            alert('Xe của bạn chọn là: ' + myCar);
+        }
+    </script>
+</body>
+</html>
