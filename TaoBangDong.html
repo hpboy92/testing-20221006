@@ -7,46 +7,45 @@
     <title>Tao Bang Dong</title>
 </head>
 <body>
-    <div id="ket_qua">
-        <table id="bang" border="1" cellspacing="0" cellpadding="5">
+    <div>
+        <table border="1" cellspacing = '0' cellpadding = '5'>
+
             <thead>
                 <tr>
-                <td>#</td>
-                <td>Họ tên</td>
+                    <td>#</td>
+                    <td>Họ tên</td>
                 </tr>
             </thead>
-
+           
             <tbody id="noi_dung_bang"></tbody>
-            
+
         </table>
     </div>
 
     <p>
-        <button type="button" onclick="themDong()">Thêm 1 dòng</button>
-        <button type="button" onclick="xoaBang()">Xóa bảng</button>
+        <button type="button" onclick="themDong ()">Thêm 1 dòng</button>
+        <button type="button" onclick="xoaBang ()">Xóa bảng</button>
     </p>
-   
-    <script>
 
-        function themDong() {
+    <script>
+        function themDong () {
             let dong = document.createElement('tr');
             let o_1 = document.createElement('td');
             let o_2 = document.createElement('td');
 
             o_1.innerHTML = 'STT';
             o_2.innerHTML = 'Phạm Hoàng Anh';
-
             dong.appendChild(o_1);
             dong.appendChild(o_2);
+
             document.getElementById('noi_dung_bang').appendChild(dong);
+
         }
 
-        function xoaBang() {
+        function xoaBang () {
             document.getElementById('noi_dung_bang').innerHTML = '';
         }
-
     </script>
-
 
 </body>
 </html>
