@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Remove</title>
+</head>
+<body>
+    <div id="div1">
+        <p id="p1">This is the first paragraph</p>
+        <p id="p2">This is the second paragraph</p>
+    </div>
+   
+    <script>
+        
+        let p3 = document.createElement('p');
+        p3.innerHTML = 'This is the third paragraph';
+        p3.style.color = 'red';
+        document.getElementById('div1').insertBefore(p3,p2);
+
+        p1.remove();
+             
+    </script>
+
+    <!-- Tìm phần tử, xác định phần tử rồi xóa -->
+
+    
+</body>
+</html>
