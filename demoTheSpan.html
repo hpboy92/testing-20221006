@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="color: red;">
+        Demo Thẻ Span
+    </h2>
+
+    Nhập tên của bạn: <br>
+    <input type="text" id="ten" style="color: red;">
+
+    <button type="button" onclick="hello ()">Xin chào</button>
+
+    <script>
+        function hello () {
+           let myName = document.getElementById('ten').value;
+        //    alert(`Xin chào ${myName}`);
+        //    console.log(myName);
+
+           document.getElementById('tenBan').innerHTML = `${myName}`;
+
+        } 
+    </script>
+
+    <div>
+        Xin chào bạn
+        <span id="tenBan">tenBan</span>
+    </div>
+
+
+
+</body>
+</html>
