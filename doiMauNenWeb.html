@@ -9,28 +9,15 @@
 <body id="body">
     <h1>Ấn nút để đổi màu nền</h1>
 
-    <button type="button" id="" onclick="blueColor ()">Blue</button>
-    <button type="button" id="" onclick="redColor ()">Red</button>
-    <button type="button" id="" onclick="greenColor ()">Green</button>
-    <button type="button" id="" onclick="clearColor ()">Clear Color</button>
+    <button type="button" id="" onclick="doiMau ('blue')">Blue</button>
+    <button type="button" id="" onclick="doiMau ('red')">Red</button>
+    <button type="button" id="" onclick="doiMau ('green')">Green</button>
+    <button type="button" id="" onclick="doiMau ('')">Clear Color</button>
 
     <script>
-        function blueColor () {
-            document.getElementById('body').style.backgroundColor = 'blue';
+        function doiMau (x) {
+            document.getElementById('body').style.backgroundColor = x;
         }
-
-        function redColor () {
-            document.getElementById('body').style.backgroundColor = 'red';
-        }
-
-        function greenColor () {
-            document.getElementById('body').style.backgroundColor = 'green';
-        }
-
-        function clearColor () {
-            document.getElementById('body').style.backgroundColor = '';
-        }
-
     </script>
     
 </body>
