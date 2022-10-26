@@ -9,35 +9,33 @@
 <body>
     <h1>Kiểm tra chẵn lẻ</h1>
     Nhập số:
-    <input type="text" id="soNhap">
+    <input type="text" id="chuoiNhap">
     <button type="button" onclick="kiemTra()">Kiểm tra</button>
     <div id = "KetQua"></div>
 
     <script>
         function kiemTra() {
 
-            let chuoiNhap = document.getElementById("soNhap").value;
+            let chuoiNhap = document.getElementById('chuoiNhap').value;
+            soNhap = parseFloat(chuoiNhap);
+            ketQua =""
 
-            let ketQua = "";
-
-            if ((chuoiNhap === "") || isNan(chuoiNhap) === true) {
+            // Dùng hàm isNaN để kiểm tra đầu vào có phải số hay không
+          
+            if (isNaN(soNhap)) {
                 ketQua = "Không hợp lệ";
 
             } else {
-
-                let soNhap = parseInt(chuoiNhap);
-                if (soNhap % 2 == 0) {
-                    ketQua = `${soNhap} là số chẵn`;
+                if(soNhap % 2 == 0) {
+                ketQua = `Số ${soNhap} là số chẵn`;
                 } else {
-                    ketQua = `${soNhap} là số lẻ`;
+                    ketQua = `Số ${soNhap} là số lẻ`;
                 }
             }
 
             document.getElementById('KetQua').innerHTML = ketQua;
         }
-
         
-       
-    </script>
+           </script>
 </body>
 </html>
