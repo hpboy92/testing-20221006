@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Tính tổng các số được nhập vào màn hình</h2>
+    <p id="ketQua"></p>
+    <script>
+        let sum = 0;
+        let number;
+        do {
+            number = parseInt(prompt('Nhập số: '));
+            sum += number;
+        } while (number !== 0);
+        document.getElementById('ketQua').innerHTML = `Tổng dãy số nhập vào là: ${sum}`
+        console.log(sum);
+    </script>
+</body>
+</html>
