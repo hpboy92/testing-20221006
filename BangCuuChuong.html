@@ -14,12 +14,19 @@
     <script>
         function inBangCuuChuong () {
             let soNhap = parseInt(document.getElementById('soNhap').value);
-            for (i = 1; i <= 10; i++) {
+
+            // Cách 1: tạo chuỗi, nối chuỗi, xuất
+            let chuoi = '';
+            for (i = 1; i < 11; i++) {
                 // let soNhap = parseInt(document.getElementById('soNhap').value);
-                let phepNhan = i * soNhap;
-                ketQua = soNhap + " x " + i + " = " +phepNhan; 
-                document.write(ketQua + '<br>');
+                // khai báo biến soNhap bên trong vong lap For thì ket qua khong chinh xac.
+                let ketQua = i * soNhap;
+                chuoi += soNhap + " x " + i + " = " + ketQua + '<br>'; 
+                // document.write(ketQua + '<br>');
+                // console.log(ketQua);
+                // document.getElementById('ketQua').innerHTML = ketQua;
             }
+            document.getElementById('ketQua').innerHTML = chuoi;
         }
     </script>
     
