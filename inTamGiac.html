@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="veTamGiac()">Vẽ ra tam giác</button>
+    <div id="tamGiac"></div>
+    <script>
+        
+        // Cách 1: Dùng appendChild
+        function veTamGiac() {
+          let count = 0;
+          for (count = 0;count < 100; count ++) {
+            node = document.createElement('div');
+            node.innerHTML = "<hr width = " + count + "%>";
+            document.getElementById('tamGiac').appendChild(node);
+          }
+        }
+
+        // Cách 2: Dùng nối chuỗi
+
+        
+    </script>
+</body>
+</html>
