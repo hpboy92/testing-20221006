@@ -16,15 +16,26 @@
             let soNhap = parseInt(document.getElementById('soNhap').value);
 
             // Cách 1: tạo chuỗi, nối chuỗi, xuất
+            // let chuoi = '';
+            // for (i = 1; i < 11; i++) {
+            //     let ketQua = i * soNhap;
+            //     chuoi += soNhap + " x " + i + " = " + ketQua + '<br>'; 
+            //     // document.write(ketQua + '<br>');
+            //     // console.log(ketQua);
+            //     // document.getElementById('ketQua').innerHTML = ketQua;
+            // }
+            // document.getElementById('ketQua').innerHTML = chuoi;
+
+            // Cách 2: Sử dụng appendChild()
+
             let chuoi = '';
-            for (i = 1; i < 11; i++) {
+            for (i = 1; i < 11; i ++) {
                 let ketQua = i * soNhap;
-                chuoi += soNhap + " x " + i + " = " + ketQua + '<br>'; 
-                // document.write(ketQua + '<br>');
-                // console.log(ketQua);
-                // document.getElementById('ketQua').innerHTML = ketQua;
+                let node = document.createElement("div");
+                chuoi = `${soNhap} x ${i} = ${ketQua}`;
+                node.innerHTML = chuoi;
+                document.getElementById('ketQua').appendChild(node);
             }
-            document.getElementById('ketQua').innerHTML = chuoi;
         }
     </script>
     
