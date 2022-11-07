@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nhập vào các số, dừng lại khi nhập giá trị 0</h2>
+    <h3>Tính tổng các số vừa nhập</h3>
+    <button type="button" onclick="xuLyTinhTong()">Bắt đầu</button>
+    <div id="ketQua"></div>
+  
+    <script>
+        function xuLyTinhTong() {
+            let tong = 0;
+            let soNhap;
+            do {
+                soNhap = parseInt(prompt('Nhập số: '));  
+                if (!isNaN(soNhap)) {
+                    tong += soNhap;
+              
+                }                
+            } while (soNhap !== 0);
+            document.getElementById('ketQua').innerHTML = "Tổng các số vừa nhập là: " + tong;
+        }
+        
+    </script>
+    
+</body>
+</html>
