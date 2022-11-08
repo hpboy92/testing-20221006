@@ -11,5 +11,19 @@
     <input type="number" id="chieuDai"> <br>
     Nhập chiều rộng:
     <input type="number" id="chieuRong"> <br>
+    <button type="button" onclick="veHinhChuNhat()">Vẽ hình chữ nhật</button>
+    <div id="ketQua"></div>
+    <script>
+        function veHinhChuNhat() {
+            let chieuDai = document.getElementById('chieuDai').value;
+            let chieuRong = document.getElementById('chieuRong').value;
+            for (i = 0; i < chieuDai; i++) {
+                for (j = 0; j <chieuRong;j++) {
+                    document.getElementById('ketQua').innerHTML += "*";
+                }
+                document.getElementById('ketQua').innerHTML += "<br>";
+                        }
+        }
+    </script>
 </body>
 </html>
