@@ -15,6 +15,7 @@
     <div id="ketQua"></div>
     <script>
         function veHinhChuNhat() {
+            document.getElementById('ketQua').innerHTML = ""
             let chieuDai = document.getElementById('chieuDai').value;
             let chieuRong = document.getElementById('chieuRong').value;
             for (i = 0; i < chieuDai; i++) {
@@ -24,6 +25,7 @@
                 document.getElementById('ketQua').innerHTML += "<br>";
                         }
         }
+
     </script>
 </body>
 </html>
