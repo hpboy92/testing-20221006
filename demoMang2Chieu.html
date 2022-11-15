@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Demo khởi tạo mảng 2 chiều</h2>
+    <pre>
+        1. Nhập vào số dòng, số cột của ma trận.
+        2. Khởi tạo giá trị ngẫu nhiên của mỗi phần tử.
+        3. Xuất ma trận.
+    </pre>
+    Nhập vào số dòng:
+    <input type="number" min="1" id="soDong" /> <br />
+    Nhập vào số cột:
+    <input type="number" min="1" id="soCot" /> <br />
+    <button type="button" onclick="khoiTaoMaTran()">Khởi tạo ma trận</button>
+    <div id="ketQua"></div>
+
+    <script>
+      function khoiTaoMaTran() {
+        // Lấy input đầu vào
+        so_Dong = parseInt(document.getElementById("soDong").value);
+        so_Cot = parseInt(document.getElementById("soCot").value);
+
+        // Khai báo ma trận 2 chiều
+        let mang = new Array(so_Dong).fill(new Array(so_Cot));
+
+        // Khởi tạo mảng
+        if (so_Dong !== 0 && soCot !== 0) {
+          let bang = document.createElement("table");
+          for (let i = 0; i < mang.length; i++) {
+            let dong = document.createElement("tr");
+            console.log(i);
+            for (let j = 0; j < mang[i].length; j++) {
+              let cot = document.createElement("td");
+              mang[i][j] = Math.floor(Math.random() * 100);
+              console.log(`[${i}][${j}] = ${mang[i][j]}`);
+              cot.innerHTML = `${mang[i][j]}`;
+              dong.appendChild(cot);
+            }
+            bang.appendChild(dong);
+          }
+          console.log(mang);
+          document.getElementById("ketQua").appendChild(bang);
+        }
+      }
+    </script>
+  </body>
+</html>
