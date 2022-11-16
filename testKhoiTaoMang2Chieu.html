@@ -10,13 +10,13 @@
     <script>
       let soDong = 3;
       let soCot = 3;
-      let mang = new Array(soDong).fill(new Array(soCot));
+      let mang = [];
 
-      for (let i = 0; i < mang.length; i++) {
-        for (j = 0; j < mang[i].length; j++) {
+      for (let i = 0; i < soDong; i++) {
+        mang[i] = new Array(soCot);
+        for (let j = 0; j < soCot; j++) {
           mang[i][j] = Math.floor(Math.random() * 100);
           console.log(i, j, mang[i][j], `mang[${i}] =` + mang[i]);
-          // console.log(mang);
         }
         console.log(mang[i]);
       }
