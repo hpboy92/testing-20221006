@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soDong = 3;
+      let soCot = 3;
+      let mang = new Array(soDong).fill(new Array(soCot));
+
+      for (let i = 0; i < mang.length; i++) {
+        for (j = 0; j < mang[i].length; j++) {
+          mang[i][j] = Math.floor(Math.random() * 100);
+          console.log(i, j, mang[i][j], `mang[${i}] =` + mang[i]);
+          console.log(mang);
+        }
+        // console.log(mang[i]);
+      }
+      console.log(mang);
+    </script>
+  </body>
+</html>
