@@ -8,8 +8,11 @@
   </head>
   <body>
     <pre>
-        In ra N số nguyên tố từ 1 đến 1000.
+        In ra N số nguyên tố đầu tiên.
     </pre>
+    In ra
+    <input type="number" min="1" id="soLuongSoNguyenTo" />
+    số nguyên tố đầu tiên.
     <button type="button" onclick="inRaKetQua()">In ra</button>
     <p id="ketQua"></p>
     <script>
@@ -24,13 +27,26 @@
       }
 
       function inRaKetQua() {
-        let mang = [];
-        for (let i = 2; i < 1001; i++) {
-          if (soNguyenTo(i)) {
-            mang.push(i);
+        oNhapLieu = document.getElementById("soLuongSoNguyenTo");
+        soLuongSoNguyenTo = parseInt(oNhapLieu.value);
+        if (soLuongSoNguyenTo > 0) {
+          dem = 0;
+          mang = [];
+          let j = 2;
+          while (dem < soLuongSoNguyenTo) {
+            if (soNguyenTo(j)) {
+              mang.push(j);
+              dem++;
+            }
+            j++;
           }
+          console.log(mang);
+          document.getElementById("ketQua").innerHTML = mang;
+        } else {
+          alert("Nhập số lớn hơn 0.");
         }
-        document.getElementById("ketQua").innerHTML = mang.join(",");
+        oNhapLieu.value = "";
+        oNhapLieu.focus();
       }
     </script>
   </body>
