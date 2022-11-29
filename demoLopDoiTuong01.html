@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // định nghĩa lớp xe hơi gồm: nhà sản xuất (brandname), model, năm
+      class Car {
+        // Constructor: tạo các thuộc tính của lớp
+        constructor(name = "Hyundai", model = "E", year = 0) {
+          this.name = name;
+          this.model = model;
+          this.year = year;
+        }
+
+        // method: tạo các phương thức
+        toString() {
+          return `${this.name} car, ${this.model} model, ${this.year}`;
+        }
+      }
+
+      let bmw = new Car("BMW", "Z", 2022);
+      let audi = new Car("Audi", "X", 2021);
+      let mercedes = new Car("Mercedes", "S", 2023);
+      let noCar = new Car();
+      let HD = new Car("Santafe");
+      console.log(bmw);
+      console.log(audi);
+      console.log(mercedes);
+      console.log(noCar);
+      console.log(HD);
+      console.log(bmw.toString());
+      console.log(audi.toString());
+      console.log(mercedes.toString());
+    </script>
+  </body>
+</html>
