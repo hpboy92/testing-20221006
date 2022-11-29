@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="500"
+      height="300"
+      style="border: 5px solid #800080"
+    ></canvas>
+    <script>
+      class Circle {
+        constructor(radius = 0, color = "") {
+          this.radius = radius;
+          this.color = color;
+        }
+
+        getRadius() {
+          return this.radius;
+        }
+
+        getArea() {
+          return Math.PI * this.radius * this.radius;
+        }
+
+        getPerimeter() {
+          return 2 * Math.PI * this.radius;
+        }
+      }
+
+      let circle_01 = new Circle(100, "red");
+      console.log(circle_01);
+      let r = circle_01.radius;
+      console.log(r, circle_01.getArea(), circle_01.getPerimeter());
+
+      let c = document.getElementById("myCanvas");
+      let ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(250, 150, circle_01.radius, 0, 2 * Math.PI);
+      ctx.fillStyle = circle_01.color;
+      ctx.fill();
+      ctx.stroke();
+    </script>
+  </body>
+</html>

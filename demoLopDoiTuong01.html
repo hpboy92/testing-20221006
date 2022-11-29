@@ -11,31 +11,37 @@
       // định nghĩa lớp xe hơi gồm: nhà sản xuất (brandname), model, năm
       class Car {
         // Constructor: tạo các thuộc tính của lớp
-        constructor(name = "Hyundai", model = "E", year = 0) {
+        constructor(name = "Hyundai", model = "E", year = 0, price = 800) {
           this.name = name;
           this.model = model;
           this.year = year;
+          this.price = price;
         }
 
         // method: tạo các phương thức
         toString() {
-          return `${this.name} car, ${this.model} model, ${this.year}`;
+          return `${this.name} car, ${this.model} model, ${this.year}, ${this.price}`;
         }
       }
 
-      let bmw = new Car("BMW", "Z", 2022);
-      let audi = new Car("Audi", "X", 2021);
-      let mercedes = new Car("Mercedes", "S", 2023);
+      // objects
+      let bmw = new Car("BMW", "Z", 2022, 1000);
+      let audi = new Car("Audi", "X", 2021, 700);
+      let mercedes = new Car("Mercedes", "S", 2023, 1500);
       let noCar = new Car();
       let HD = new Car("Santafe");
-      console.log(bmw);
-      console.log(audi);
-      console.log(mercedes);
-      console.log(noCar);
-      console.log(HD);
-      console.log(bmw.toString());
-      console.log(audi.toString());
-      console.log(mercedes.toString());
+
+      let cars = [];
+      cars.push(bmw);
+      cars.push(audi);
+      cars.push(mercedes);
+      let sum = 0;
+
+      for (let i = 0; i < cars.length; i++) {
+        console.log(cars[i].toString());
+        sum += cars[i].price;
+      }
+      console.log(`Tổng tiền là: ${sum}`);
     </script>
   </body>
 </html>
